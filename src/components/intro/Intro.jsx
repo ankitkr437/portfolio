@@ -26,6 +26,7 @@ export default function Intro() {
         </h3>
 
        <div className="intro-button">
+
        <a className="aboutme-button" href="#about">
           About Me
           <img src="assets/downabout.png" alt="" className="" />
@@ -34,22 +35,24 @@ export default function Intro() {
           Hire Me
           <img src="assets/downabout.png" alt="" className="" />
         </a>
+        
        </div>
         <div className="contact-link">
-          <a href="https://github.com/ankitkr437" className="contact-1" target="_blank">
+          <a href="https://github.com/ankitkr437" className="contact-1" target="_blank" rel="noreferrer">
             <img src="assets/github.png" alt="" className="contact-img" />
           </a>
-          <a href="https://www.linkedin.com/in/ankit-kumar-612064205/" className="contact-1" target="_blank">
+          <a href="https://www.linkedin.com/in/ankit-kumar-612064205/" className="contact-1" target="_blank" rel="noreferrer">
             <img src="assets/linkedin.png" alt="" className="contact-img" />
           </a>
           <a
             href="https://www.facebook.com/profile.php?id=100037481640809"
             className="contact-1"
             target="_blank"
+            rel="noreferrer"
           >
             <img src="assets/facebook.png" alt="" className="contact-img" />
           </a>
-          <a href="https://www.instagram.com/ankitkr437/" className="contact-1" target="_blank">
+          <a href="https://www.instagram.com/ankitkr437/" className="contact-1" target="_blank" rel="noreferrer">
             <img src="assets/instagram.png" alt="" className="contact-img" />
           </a>
         </div>
