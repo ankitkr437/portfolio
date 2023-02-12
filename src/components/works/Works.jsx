@@ -6,7 +6,7 @@ export default function Works() {
   const data = [
     {
       id: "1",
-      icon: "./assets/mobile.png",
+      icon: "./assets/note.png",
       title: "MERN stack website",
       desc:
         "Used ReactJs for frontend, Redux Toolkit for state management, Implemented Chat feature using Socket.io, Created Backend using Node js and Mongodb.",
@@ -16,7 +16,7 @@ export default function Works() {
     },
     {
       id: "2",
-      icon: "./assets/globe.png",
+      icon: "./assets/ecomercework.png",
       title: "Ecommerce Website",
       desc:
         "Used React js for developing frontend, Redux toolkit for managing the states, Styled components for styling the website. Implemented Jwt authentication in backend, Created various Api using NodeJs and MongoDB ",
@@ -26,7 +26,7 @@ export default function Works() {
     },
     {
       id: "3",
-      icon: "./assets/writing.png",
+      icon: "./assets/crypto.png",
       title: "CryptoTracker",
       desc:
         "A website which allows a user to manage a portfolio of cryptocurrency coins, showing the details of each crypto and past prices of each coin using a graph",
@@ -36,7 +36,7 @@ export default function Works() {
     },
     {
       id: "3",
-      icon: "./assets/writing.png",
+      icon: "./assets/code.png",
       title: "Leetcode Profile",
       desc:
         "I am Knight(Rated 1900+) on Leetcode, Solved 850+ questions on Leetcode",
@@ -54,6 +54,7 @@ export default function Works() {
   
   return (
     <div className="works" id="works">
+       <h1 className='skill-title'>My Skills </h1>
       <div
         className="slider"
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}

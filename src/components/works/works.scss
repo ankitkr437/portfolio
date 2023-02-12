@@ -1,28 +1,68 @@
 @import "../../global.scss";
-
+ 
 .works {
-  background-color: crimson;
+
+  background-color: #1578ea;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
 
+  .skill-title {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .skill-title::before,
+  .skill-title::after {
+    content: '';
+    flex: 1;
+    border-bottom: 2px solid white;
+  }
+  
+  .skill-title:not(:empty)::before {
+    margin-right: .25em;
+  }
+  
+  .skill-title:not(:empty)::after {
+    margin-left: .25em;
+  }
+
+  h1 {
+    overflow: hidden;
+    text-align: center;
+    margin-top: 3vh;
+    color: white;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    margin-bottom: 4vh;
+    width: 80%;
+    @include mobile{
+     margin-bottom: 0vh;
+    }
+     
+  }
+  
+  
   .arrow {
     height: 50px;
     position: absolute;
     cursor: pointer;
-
+   
     @include mobile {
-      display: none;
+       height: 30px;
     }
 
     &.left {
-      left: 100px;
+      left: 10px;
       transform: rotateY(180deg);
     }
 
     &.right {
-      right: 100px;
+      right: 10px;
+       
     }
   }
 
@@ -34,9 +74,7 @@
     transition: all 1s ease-out;
 
     @include mobile {
-      height: 100vh;
-      flex-direction: column;
-      justify-content: center;
+      height: 430px;
     }
 
     .container {
@@ -56,17 +94,21 @@
 
         @include mobile {
           width: 80%;
-          height: 150px;
+          height: 400px;
           margin: 15px 0;
         }
 
         .left {
-          flex: 4;
-          height: 80%;
+          flex: 5;
+          height: 100%;
           display: flex;
           align-items: center;
           justify-content: center;
-
+          @include mobile {
+            width: 100%;
+            // margin: 15px 0;
+          }
+  
           .leftContainer {
             width: 90%;
             height: 70%;
@@ -75,24 +117,24 @@
             justify-content: space-between;
 
             .imgContainer {
-              width: 40px;
-              height: 40px;
+              width: 50px;
+              height: 50px;
               border-radius: 50%;
-              background-color: rgb(245, 179, 155);
+              background-color: rgb(121, 171, 246);
               display: flex;
               align-items: center;
               justify-content: center;
 
               @include mobile {
-                width: 20px;
-                height: 20px;
+                width: 40px;
+                height: 40px;
               }
 
               img {
-                width: 25px;
+                width: 35px;
 
                 @include mobile {
-                  width: 15px;
+                  width: 25px;
                 }
               }
             }
@@ -106,7 +148,7 @@
             p {
               font-size: 13px;
               @include mobile{
-                display: none;
+                 font-size: 11px;
               }
             }
             span {
@@ -128,6 +170,9 @@
           img {
             width: 400px;
             transform: rotate(-10deg);
+            @include mobile{
+              height: 30%;
+            }
           }
         }
       }
