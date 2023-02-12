@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .skill-container{
-     background-color: rgb(54, 122, 249);
+     background-color: rgb(33, 109, 251);
      width: 220px;
      height: 110px;
      display: flex;
@@ -9,8 +9,8 @@
      border: 1px solid rgb(19, 94, 214);
      box-shadow: rgba(0, 0, 0, 0.24) 0px 4px 9px;
      @include mobile{
-      width: 125px;
-      height: 90px;
+      width: 105px;
+      height: 92px;
     }
      border-radius: 20px;
      .left{
@@ -31,9 +31,10 @@
          margin-top: 3px;
          font-size: 15px;
          font-weight: bold;
+         color: white;
          @include mobile{
             margin-top: 1px;
-            font-size: 12px;
+            font-size: 11px;
          }
         }
      }

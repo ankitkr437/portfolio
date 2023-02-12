@@ -53,7 +53,7 @@
         font-size: inherit;
         letter-spacing: 25px;
         @include mobile {
-          letter-spacing: 10px;
+          letter-spacing: 7px;
         }
       }
 
@@ -93,7 +93,7 @@
         font-size: 17px;
         padding: 7px;
         height: 6vh;
-        width: 25%;
+        width: 30%;
       }
     }
     .aboutme-button:hover{
@@ -128,7 +128,7 @@
       @include mobile {
         font-size: 17px;
         padding: 7px;
-        width: 25%;
+        width: 30%;
         height: 6vh;
       }
     }
@@ -157,7 +157,12 @@
       .contact-img {
         width: 8vh;
         height: 8vh;
+        @include mobile{
+          width: 6vh;
+          height: 6vh;
+        }
       }
+
     }
   }
 
