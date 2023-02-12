@@ -1,0 +1,51 @@
+@import "../../global.scss";
+
+.skill-container{
+     background-color: rgb(54, 122, 249);
+     width: 220px;
+     height: 110px;
+     display: flex;
+     margin: 10px;
+     border: 1px solid rgb(19, 94, 214);
+     box-shadow: rgba(0, 0, 0, 0.24) 0px 4px 9px;
+     @include mobile{
+      width: 125px;
+      height: 90px;
+    }
+     border-radius: 20px;
+     .left{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        .skillimg{
+         width: 60px;
+         height: 60px;
+         @include mobile{
+            width: 40px;
+         height: 40px;
+         }
+        }
+        .skillname{
+         margin-top: 3px;
+         font-size: 15px;
+         font-weight: bold;
+         @include mobile{
+            margin-top: 1px;
+            font-size: 12px;
+         }
+        }
+     }
+     .right{
+      display: flex;
+      flex: 1;
+      justify-content: center;
+      align-items: center;
+      .right-progress{
+         width: 60px;
+         height: 60px;
+      }
+     
+     }
+}

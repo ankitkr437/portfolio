@@ -1,0 +1,50 @@
+@import "../../global.scss";
+
+#skills {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    flex-direction: column;
+    background-color:white;
+    @include mobile{
+      width: 100%;
+      padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    }
+    .all-skills{
+        display: flex;
+        align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    }
+    h1 {
+      overflow: hidden;
+      text-align: center;
+      margin-top: 3vh;
+      margin-bottom: 3vh;
+    }
+    
+    h1:before,
+    h1:after {
+      background-color: #000;
+      content: "";
+      display: inline-block;
+      height: 1px;
+      position: relative;
+      vertical-align: middle;
+      width: 50%;
+    }
+    
+    h1:before {
+      right: 0.5em;
+      margin-left: -50%;
+    }
+    
+    h1:after {
+      left: 0.5em;
+      margin-right: -50%;
+    }
+    
+}
