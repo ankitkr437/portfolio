@@ -39,7 +39,7 @@ export default function Intro() {
           <a href="https://github.com/ankitkr437" className="contact-1" target="_blank">
             <img src="assets/github.png" alt="" className="contact-img" />
           </a>
-          <a href="#portfolio" className="contact-1" target="_blank">
+          <a href="https://www.linkedin.com/in/ankit-kumar-612064205/" className="contact-1" target="_blank">
             <img src="assets/linkedin.png" alt="" className="contact-img" />
           </a>
           <a
