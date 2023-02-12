@@ -1,11 +1,19 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import "./contact.scss";
+import emailjs from '@emailjs/browser';
 
 export default function Contact() {
-  const [message, setMessage] = useState(false);
-
-  const handleSubmit = (e) => {
+   const form=useRef();
+   const [message,setMessage]=useState(false)
+   const sendEmail = (e) => {
     e.preventDefault();
+    emailjs.sendForm(
+      'service_i9a0o97', 'template_1aa24il', form.current, 'iCjGnIksYuxFm7Mwr')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
     setMessage(true);
   };
   return (
@@ -18,31 +26,35 @@ export default function Contact() {
         <img src="assets/shake.svg" alt="" />
       </div>
       <div className="right">
-        <form onSubmit={handleSubmit}>
+
+        <form ref={form} onSubmit={sendEmail}>
 
           <div className="input-container">
           <label for="name">Name</label>
-          <input type="text" placeholder="your name" id="name" />
+          <input type="text" placeholder="your name" id="name" name="user_name" />
           </div>
           
           <div className="input-container">
           <label for="email">Email</label>
-          <input type="email" placeholder="your email" id="email" />
+          <input type="email" placeholder="your email" id="email" name="user_email" />
           </div>
 
           <div className="input-container">
+            
             <p className="checkbox-title">What do you need?</p>
             <div className="checkbox-container">
             <div className="checkbox1">
-            <input type="checkbox" id="web" name="web" value="web" />
+
+            <input type="checkbox" id="web" name="web" value="Web developement" />
             <label for="web">Web developement</label>
             </div>
             <div className="checkbox1">
-            <input type="checkbox" id="api" name="api" value="api" />
+            <input type="checkbox" id="api" name="api" value="Api developement" />
             <label for="api">Api developement</label>
             </div>
+
             <div className="checkbox1">
-            <input type="checkbox" id="dsa" name="dsa" value="dsa" />
+            <input type="checkbox" id="dsa" name="dsa" value="Data structure and Algorithm" />
             <label for="dsa">Data structure and Algorithm</label>
             </div>
             </div>
@@ -50,10 +62,10 @@ export default function Contact() {
 
           <div className="input-container">
           <label for="message">Message</label>
-          <textarea placeholder="Write your message..." id="message"></textarea>
+          <textarea placeholder="Write your message..." id="message" name="message"></textarea>
           </div>
           
-          <button type="submit">Send Message</button>
+          <button type="submit" value="Send">Send Message</button>
           {message && <span>Thanks, I'll reply ASAP :)</span>}
         </form>
       </div>

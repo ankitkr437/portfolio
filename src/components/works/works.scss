@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .works {
-  background-color: rgb(254, 212, 0);
+  background-color: crimson;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -109,7 +109,12 @@
                 display: none;
               }
             }
-           
+            span {
+              font-size: 12px;
+              font-weight: 600;
+              text-decoration: underline;
+              cursor: pointer;
+            }
           }
         }
         .right {

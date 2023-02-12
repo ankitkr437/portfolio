@@ -2,7 +2,7 @@ export const data=[
       {
         name: "Javascript",
         img:"assets/javascript.png",
-        value:70
+        value:80
       },
       {
         name: "C++",
@@ -22,7 +22,7 @@ export const data=[
       {
         name: "NodeJS",
         img:"assets/nodejs.png",
-        value:60
+        value:70
       },
       {
         name: "ExpressJS",
@@ -42,11 +42,11 @@ export const data=[
       {
         name: "CSS",
         img:"assets/css.png",
-        value:70
+        value:90
       },
       {
         name: "HTML",
         img:"assets/html.png",
-        value:70
+        value:80
       },
 ]
