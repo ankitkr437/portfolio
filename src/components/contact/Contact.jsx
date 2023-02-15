@@ -31,12 +31,12 @@ export default function Contact() {
 
           <div className="input-container">
           <label for="name">Name</label>
-          <input type="text" placeholder="your name" id="name" name="user_name" />
+          <input type="text" placeholder="your name" id="name" name="user_name" required/>
           </div>
           
           <div className="input-container">
           <label for="email">Email</label>
-          <input type="email" placeholder="your email" id="email" name="user_email" />
+          <input type="email" placeholder="your email" id="email" name="user_email" required/>
           </div>
 
           <div className="input-container">
@@ -62,7 +62,7 @@ export default function Contact() {
 
           <div className="input-container">
           <label for="message">Message</label>
-          <textarea placeholder="Write your message..." id="message" name="message"></textarea>
+          <textarea placeholder="Write your message..." id="message" name="message" required></textarea>
           </div>
           
           <button type="submit" value="Send">Send Message</button>
