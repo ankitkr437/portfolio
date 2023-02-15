@@ -7,7 +7,7 @@ export default function Works() {
     {
       id: "1",
       icon: "./assets/note.png",
-      title: "MERN stack website",
+      title: "NoteSharing Website",
       desc:
         "Used ReactJs for frontend, Redux Toolkit for state management, Implemented Chat feature using Socket.io, Created Backend using Node js and Mongodb.",
       url:"https://notesharing.onrender.com/",
