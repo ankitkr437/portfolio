@@ -146,8 +146,10 @@
       position: fixed;
       flex-direction: column;
       right: 0;
+     
       @include mobile{
         position: absolute;
+       
       }
       .contact-1 {
         background-color: rgb(110, 153, 252);
