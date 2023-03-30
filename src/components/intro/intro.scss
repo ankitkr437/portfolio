@@ -30,7 +30,7 @@
       font-size: 40px;
       margin: 10px 0;
       letter-spacing: 20px;
-      color: rgb(205, 216, 228);
+      color: rgb(25, 82, 163);
       @include mobile {
         font-size: 35px;
         letter-spacing: 13px;
@@ -38,7 +38,7 @@
     }
     h2 {
       font-size: 35px;
-      color: rgb(205, 216, 228);
+      color: rgb(30, 85, 163);
       @include mobile {
         font-size: 25px;
       }
@@ -52,6 +52,7 @@
       span {
         font-size: inherit;
         letter-spacing: 25px;
+        color: $mainColor;
         @include mobile {
           letter-spacing: 7px;
         }
@@ -116,7 +117,7 @@
       margin-right: 5vw;
       height: 8vh;
       border: 1px solid rgb(127, 185, 239);
-      color: white;
+      color: $mainColor;
       font-size: 20px;
       font-weight: bold;
       display: flex;
@@ -134,7 +135,7 @@
     }
     .contact-button:hover{
       background-color: #17459e;
-
+      color: white;
     }
     
 
