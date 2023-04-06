@@ -2,7 +2,7 @@ export const data=[
       {
         name: "Javascript",
         img:"assets/javascript.png",
-        value:80
+        value:90
       },
       {
         name: "C++",
@@ -17,17 +17,17 @@ export const data=[
       {
         name: "ReactJS",
         img:"assets/react.png",
-        value:80
+        value:90
       },
       {
         name: "NodeJS",
         img:"assets/nodejs.png",
-        value:70
+        value:90
       },
       {
         name: "ExpressJS",
         img:"assets/expressjs.png",
-        value:70
+        value:90
       },
       {
         name: "MongoDB",

@@ -16,7 +16,7 @@ Pursuing Btech from <span style={{fontWeight:"bold"}}>NIT Jamshedpur</span> with
              <img src='assets/leetcode.png'  className='dsa-icon'/>
              <a className='check-profile' href='https://leetcode.com/Ankitkr437/' target="_blank">Check Profile</a>
            </div>
-           <p className='dsa-achievment'>Rated Knight (Max Contesr Rating: 1914)</p>
+           <p className='dsa-achievment'>Rated Knight (Max Contesr Rating: 2034)</p>
            <p className='dsa-achievment'>Solved 900+ Problems</p>
           </div>
           <div className='dsa-container'>

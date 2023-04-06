@@ -30,7 +30,8 @@
       font-size: 40px;
       margin: 10px 0;
       letter-spacing: 20px;
-      color: rgb(25, 82, 163);
+      // color: rgb(25, 82, 163);
+      color: white;
       @include mobile {
         font-size: 35px;
         letter-spacing: 13px;
@@ -38,7 +39,8 @@
     }
     h2 {
       font-size: 35px;
-      color: rgb(30, 85, 163);
+      // color: rgb(30, 85, 163);
+      color: white;
       @include mobile {
         font-size: 25px;
       }
@@ -52,7 +54,8 @@
       span {
         font-size: inherit;
         letter-spacing: 25px;
-        color: $mainColor;
+        // color: $mainColor;
+        color: white;
         @include mobile {
           letter-spacing: 7px;
         }
@@ -80,7 +83,6 @@
       width: 15%;
       margin-top: 4vh;
       margin-right: 5vw;
-      border: 1px solid rgb(17, 66, 111);
       color: white;
       font-size: 20px;
       font-weight: bold;
@@ -98,7 +100,8 @@
       }
     }
     .aboutme-button:hover{
-      background-color: #143984;
+      background-color: white;
+      color: #1b356e;
     }
       img {
         margin-left: 8px;
@@ -116,7 +119,6 @@
       margin-top: 4vh;
       margin-right: 5vw;
       height: 8vh;
-      border: 1px solid rgb(127, 185, 239);
       color: $mainColor;
       font-size: 20px;
       font-weight: bold;
@@ -124,8 +126,10 @@
       align-items: center;
       justify-content: center;
       cursor: pointer;
+      background-color: #17459e;
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
       transition: 0.2s all ease-in-out;
+      color: white;
       @include mobile {
         font-size: 17px;
         padding: 7px;
@@ -134,8 +138,8 @@
       }
     }
     .contact-button:hover{
-      background-color: #17459e;
-      color: white;
+      background-color: white;
+      color: #1b356e;
     }
     
 
@@ -152,13 +156,13 @@
        
       }
       .contact-1 {
-        background-color: rgb(110, 153, 252);
+        background-color: rgb(140, 178, 249);
         margin-bottom: 1vh;
         transition: 0.3s all ease-in-out;
       }
       .contact-1:hover {
         transform: scale(1.1);
-        background-color: rgb(63, 127, 186);
+        background-color: rgb(124, 169, 253);
       }
       .contact-img {
         width: 8vh;
