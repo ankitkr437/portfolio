@@ -32,7 +32,7 @@ Pursuing Btech from <span style={{fontWeight:"bold"}}>NIT Jamshedpur</span> with
              <img src='assets/gfg.png' className='dsa-icon'/>
              <a className='check-profile' href='https://auth.geeksforgeeks.org/user/ankitloharshi/practice' target="_blank">Check Profile</a>
            </div>
-           <p className='dsa-achievment'>Solved 150+ Problems</p>
+           <p className='dsa-achievment'>Solved 200+ Problems</p>
           </div>
        </div>
     </div>
